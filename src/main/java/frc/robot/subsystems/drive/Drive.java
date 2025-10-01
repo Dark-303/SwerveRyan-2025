@@ -17,9 +17,9 @@ import static edu.wpi.first.units.Units.*;
 
 import com.pathplanner.lib.auto.AutoBuilder;
 import com.pathplanner.lib.pathfinding.Pathfinding;
-import com.pathplanner.lib.util.HolonomicPathFollowerConfig;
+//import com.pathplanner.lib.util.HolonomicPathFollowerConfig;
 import com.pathplanner.lib.util.PathPlannerLogging;
-import com.pathplanner.lib.util.ReplanningConfig;
+//import com.pathplanner.lib.util.ReplanningConfig;
 import edu.wpi.first.math.estimator.SwerveDrivePoseEstimator;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
@@ -77,6 +77,7 @@ public class Drive extends SubsystemBase {
     modules[3] = new Module(brModuleIO, 3);
 
     // Configure AutoBuilder for PathPlanner
+    /*
     AutoBuilder.configureHolonomic(
         this::getPose,
         this::setPose,
@@ -114,7 +115,7 @@ public class Drive extends SubsystemBase {
                   }
                 },
                 null,
-                this));
+                this));*/
   }
 
   public void periodic() {
